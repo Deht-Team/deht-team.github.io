@@ -1,0 +1,14 @@
+{
+  "type of games": [
+    "Action",
+    "Obbies",
+    "Fighting games",
+    "Live Simulators"
+  ],
+  "how many violent": "small",
+  "tech": [
+    "React",
+    "Vite",
+    "TypeScript"
+  ]
+}
