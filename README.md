@@ -16,7 +16,6 @@ violent, not medium, not big, not massive, only little.
 
 - React
 - Vite
-- Skills
 - Supabase
 - GitHub Pages
 
