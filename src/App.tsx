@@ -7,6 +7,7 @@ import Footer from "./components/Footer"
 export default function App() {
   return (
     <BrowserRouter basename="/">
+      
       <NavBar />
 
       <Routes>
@@ -14,6 +15,7 @@ export default function App() {
       </Routes>
 
       <Footer />
+      
     </BrowserRouter>
   )
 }
