@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function NavBar() {
   return (
     <nav
@@ -15,13 +17,24 @@ export default function NavBar() {
       <h1 style={{ fontSize: "1.6rem", margin: 0 }}>🎮 Deht</h1>
 
       <div style={{ display: "flex", gap: "1rem" }}>
-        <button style={navBtn}>Home</button>
-        <button style={navBtn}>Games</button>
-        <button style={navBtn}>Library</button>
-        <button style={navBtnPrimary}>Sign In</button>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <button style={navBtn}>Home</button>
+        </Link>
+
+        <Link to="/games" style={{ textDecoration: "none" }}>
+          <button style={navBtn}>Games</button>
+        </Link>
+
+        <Link to="/library" style={{ textDecoration: "none" }}>
+          <button style={navBtn}>Library</button>
+        </Link>
+
+        <Link to="/auth" style={{ textDecoration: "none" }}>
+          <button style={navBtnPrimary}>Sign In</button>
+        </Link>
       </div>
     </nav>
-  );
+  )
 }
 
 const navBtn = {
@@ -31,7 +44,7 @@ const navBtn = {
   background: "white",
   cursor: "pointer",
   transition: "0.2s"
-};
+}
 
 const navBtnPrimary = {
   padding: "0.6rem 1rem",
@@ -41,4 +54,4 @@ const navBtnPrimary = {
   color: "white",
   cursor: "pointer",
   transition: "0.2s"
-};
+}
