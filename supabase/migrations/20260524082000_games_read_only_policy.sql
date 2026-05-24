@@ -3,6 +3,6 @@
 -- Allow authenticated users to read the games table
 create policy "Users can read games"
 on public.games
-for select
+for public
 to authenticated
 using (true);
